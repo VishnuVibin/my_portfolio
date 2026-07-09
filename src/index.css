@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Cinzel", serif;
+  --font-signature: "Mrs Saint Delafield", cursive;
+  
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #fbf8f3;
+  --color-gold-200: #f5eedf;
+  --color-gold-300: #e6d5bc;
+  --color-gold-400: #dfcca9;
+  --color-gold-500: #cbb48b;
+  --color-gold-600: #ae976d;
+  --color-gold-700: #8c734e;
+  --color-navy-950: #03060f;
+  --color-navy-900: #060b1b;
+  --color-navy-800: #0c142c;
+  --color-navy-700: #142244;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-navy-950);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching the gold aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #03060f;
+}
+::-webkit-scrollbar-thumb {
+  background: #ae976d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dfcca9;
+}
