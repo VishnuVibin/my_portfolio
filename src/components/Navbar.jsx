@@ -7,7 +7,7 @@ function Navbar() {
         
         {/* Left Info */}
         <div className="text-left leading-relaxed">
-          <div className="font-semibold text-gold-300">Full-Stack Developer</div>
+          <div className="font-semibold text-gold-300">AI & Full Stack Developer</div>
           <div className="text-gold-500">Portfolio</div>
         </div>
 
