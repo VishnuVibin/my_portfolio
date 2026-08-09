@@ -6,18 +6,18 @@
   --font-display: "Cinzel", serif;
   --font-signature: "Mrs Saint Delafield", cursive;
   
-  --color-gold-50: #fdfbf7;
-  --color-gold-100: #fbf8f3;
-  --color-gold-200: #f5eedf;
-  --color-gold-300: #e6d5bc;
-  --color-gold-400: #dfcca9;
-  --color-gold-500: #cbb48b;
-  --color-gold-600: #ae976d;
-  --color-gold-700: #8c734e;
-  --color-navy-950: #03060f;
-  --color-navy-900: #060b1b;
-  --color-navy-800: #0c142c;
-  --color-navy-700: #142244;
+  --color-gold-50: #fdfaf5;
+  --color-gold-100: #f7efe2;
+  --color-gold-200: #ead9be;
+  --color-gold-300: #dcbfa0;
+  --color-gold-400: #cda375;
+  --color-gold-500: #b58d5b;
+  --color-gold-600: #937046;
+  --color-gold-700: #715330;
+  --color-navy-950: #12100f; /* Warm dark charcoal-black background */
+  --color-navy-900: #1a1816; /* Warm dark-grey card background */
+  --color-navy-800: #24211e; /* Slightly lighter dark-grey border/accent */
+  --color-navy-700: #332e2a; /* Muted divider background */
 }
 
 html {
@@ -28,21 +28,21 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   background-color: var(--color-navy-950);
-  color: white;
+  color: #e8e4df;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar matching the gold aesthetic */
+/* Custom scrollbar matching the gold/charcoal aesthetic */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #03060f;
+  background: #12100f;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ae976d;
+  background: #b58d5b;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #dfcca9;
+  background: #cda375;
 }

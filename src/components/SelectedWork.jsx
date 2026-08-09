@@ -11,13 +11,13 @@ const PROJECTS = [
     tech: "YOLOv8 • TensorFlow • EasyOCR • Streamlit",
     year: "2024",
     image: projectDiagramImg,
-    link: "https://github.com/VishnuVibin"
+    link: "https://p-id-analyzer-git-master-vishnu2219.vercel.app/"
   },
   {
     id: 2,
     title: "Knowledge-Retrieval Web App",
     subtitle: "Conversational Document Agent",
-    tech: "Flask • LLMs • Groq API • PDF Parser",
+    tech: "Flask • LLMs • Together API • PDF Parser",
     year: "2024",
     image: projectKnowledgeImg,
     link: "https://github.com/VishnuVibin"
@@ -38,8 +38,8 @@ function SelectedWork() {
     <section id="work" className="max-w-7xl mx-auto px-5 mb-28 scroll-mt-24">
       
       {/* Header */}
-      <div className="flex justify-between items-end pb-4 border-b border-gold-600/20">
-        <h3 className="font-serif text-sm tracking-[0.2em] text-gold-400 uppercase">
+      <div className="flex justify-between items-end pb-4 border-b border-gold-500/15">
+        <h3 className="font-sans text-sm tracking-[0.2em] text-gold-400 uppercase font-semibold">
           Selected Work
         </h3>
         <a 
@@ -64,18 +64,18 @@ function SelectedWork() {
             className="group block"
           >
             {/* Image Container with Border & Hover Zoom */}
-            <div className="relative aspect-[4/3] overflow-hidden border border-gold-600/20 bg-navy-900/60 rounded-sm">
+            <div className="relative aspect-[4/3] overflow-hidden border border-gold-500/15 bg-navy-900/60 rounded-2xl">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
+                className="w-full h-full object-cover grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
               />
               {/* Overlay shadow / border effect */}
               <div className="absolute inset-0 border border-transparent group-hover:border-gold-400/40 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent opacity-60"></div>
               
               {/* Tiny Hover Indicator icon */}
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-navy-950/80 border border-gold-600/30 flex items-center justify-center text-gold-400 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-navy-950/80 border border-gold-500/20 flex items-center justify-center text-gold-400 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                 <FiArrowUpRight />
               </div>
             </div>
@@ -83,17 +83,17 @@ function SelectedWork() {
             {/* Info details */}
             <div className="flex justify-between items-start mt-4">
               <div>
-                <h4 className="font-serif text-lg text-gold-200 group-hover:text-gold-400 transition-colors">
+                <h4 className="font-sans text-lg font-bold text-gold-200 group-hover:text-gold-400 transition-colors">
                   {project.title}
                 </h4>
                 <p className="font-sans text-xs text-gold-500 uppercase mt-0.5">
                   {project.subtitle}
                 </p>
-                <div className="font-sans text-[10px] tracking-wider text-gold-600/90 mt-2">
+                <div className="font-sans text-[10px] tracking-wider text-gold-600/90 mt-2 font-medium">
                   {project.tech}
                 </div>
               </div>
-              <span className="font-serif text-xs text-gold-500 mt-1">
+              <span className="font-sans text-xs text-gold-500 mt-1 font-semibold">
                 {project.year}
               </span>
             </div>
