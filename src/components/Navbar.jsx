@@ -1,4 +1,4 @@
-import resumeFile from "../assets/Vishnu_J_FullStack_Resume (1).pdf";
+import resumeFile from "../assets/Vishnu_J_Resume.pdf";
 
 function Navbar() {
   return (
